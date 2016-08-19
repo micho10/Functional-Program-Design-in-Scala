@@ -33,4 +33,12 @@ abstract class QuickCheckHeap extends Properties("Heap") with IntHeap {
     e1 <= e2
   }
 
+  property("delete last element in the heap should produce an empty heap") = forAll { a: Int =>
+    deleteMin(insert(a, empty)) == empty
+  }
+
+  property("continually finding and deleting the minimum produces a sorted sequence") = ???
+
+  property("the minimum of the meld of 2 heaps should be the minimum of 1 of them") = ???
+
 }

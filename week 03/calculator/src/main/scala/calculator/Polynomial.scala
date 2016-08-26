@@ -24,4 +24,3 @@ object Polynomial {
     )
   }
 }
-git 
